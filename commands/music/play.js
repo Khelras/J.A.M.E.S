@@ -2,8 +2,7 @@ const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const Youtube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
-const { youtubeAPI } = 'AIzaSyAJfFOwMNbg3UGNAnpedeW_EGyb40_Mt5k';
-const youtube = new Youtube(youtubeAPI);
+const youtube = new Youtube('AIzaSyAJfFOwMNbg3UGNAnpedeW_EGyb40_Mt5k');
 
 module.exports = class PlayCommand extends Command {
   constructor(client) {
@@ -13,6 +12,7 @@ module.exports = class PlayCommand extends Command {
       memberName: 'play',
       group: 'music',
       description: 'Play any song or playlist from youtube',
+      userPermissions: ['ADMINISTRATOR'],
       guildOnly: true,
       clientPermissions: ['SPEAK', 'CONNECT'],
       throttling: {

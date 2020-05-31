@@ -8,6 +8,7 @@ module.exports = class ResumeCommand extends Command {
       memberName: 'resume',
       group: 'music',
       description: 'Resume the current paused song',
+      userPermissions: ['ADMINISTRATOR'],
       guildOnly: true
     });
   }

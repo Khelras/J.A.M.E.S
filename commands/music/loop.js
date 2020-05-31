@@ -8,6 +8,7 @@ module.exports = class LoopCommand extends Command {
       memberName: 'loop',
       guildOnly: true,
       description: 'Loop the current playing song',
+      userPermissions: ['ADMINISTRATOR'],
       args: [
         {
           key: 'numOfTimesToLoop',

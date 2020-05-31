@@ -8,6 +8,7 @@ module.exports = class ShuffleQueueCommand extends Command {
       memberName: 'shuffle',
       group: 'music',
       description: 'Shuffle the song queue',
+      userPermissions: ['ADMINISTRATOR'],
       guildOnly: true
     });
   }
