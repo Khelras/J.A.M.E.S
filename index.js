@@ -48,7 +48,7 @@ client.registry
 
 client.once('ready', () => {
   console.log('Ready!');
-  client.user.setActivity(`every instruments`);
+  client.user.setActivity(`every instrument`);
 });
 
 client.login(process.env.token);
